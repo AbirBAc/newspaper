@@ -13,6 +13,7 @@ header h1{
 	text-transform: uppercase;
 	letter-spacing: .1em;
   margin-bottom: 0;
+  color: blue;
 	}
   h2{
     font-size: 1em;
