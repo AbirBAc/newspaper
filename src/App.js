@@ -1,35 +1,37 @@
 import './App.css';
 import { Navbar} from 'react-bootstrap'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './Components/Home';
+import News from './Components/News';
+import Contact from './Components/Contact';
+import Cookies from './Components/Cookies';
+import LifeStyle from './Components/LifeStyle';
 import Footer from './Components/Footer';
 import Header from './Components/Header/Head';
-import News from './Components/News';
-import LifeStyle from './Components/LifeStyle';
-
 
 
 
 function App() {
   return (
-    <div className="App">
+
        <BrowserRouter>
       <div>
+        
+        <Header/>
         <Navbar/>
+        
         <Routes>
-        <Route path='/Home' element={<Home />} />
+          <Route exact path='/Home' element={<Home />}/>
           <Route path='/LifeStyle' element={<LifeStyle />} />
-          <Route path='/News/:id' element={<News />} />
-
-      
+          <Route path='/News' element={<News />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Cookies' element={<Cookies/>} />
         </Routes>
+        
+        <Footer/>
+       
       </div>
-      <Header/>
-      <Home/>
-      <Footer/>
     </BrowserRouter>
-    </div>
     )
 }
 

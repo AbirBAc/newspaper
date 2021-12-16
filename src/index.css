@@ -1,22 +1,58 @@
-body{
-    background-color:#FCBF49;
-  }
-  .header {
-    padding: 25px 0;
-    text-align: center;
-    background: #222;
-  }
-  /*  src/Title.css  */
-/*  src/Title.css  */
-.header {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  padding: 1em;
-  margin-bottom: 2em;
-  background-color: rgb(192, 45, 26);
-  color: #fff;
 
+.svg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+header {
+  background-color : #a87810;
+  color: #a87810;
+  padding-top: 1vw;
+  padding-bottom: 0vw;
+  text-align: center;
+  text-emphasis-color: #e7af35 ;
+}
+
+
+
+footer {
+  background: #a87810;
+  padding: 5vh 0;
+  text-align: center;
+  position: relative;
+}
+.container {
+  background: #3d3402;
+  padding: 4vh 0;
+  text-align: center;
+  position: center;
+  background-position: center ;
+  vertical-align: center ; 
+}
+
+div.container {
+   display: grid;
+  justify-content: center;
+ }
+
+ .MuiCard-root {
+  background: #0a2513;
+  color: #0a2513;
+  text-align: center;
+  position: center;
+  background-position: center ;
+   
+}
+
+.card.container {
+  background: #1b3b29;
+  color: #1b3b29;
+  text-align: center;
+  position: center;
+  background-position: center ;
+   
 }

@@ -1,18 +1,21 @@
 import React from 'react'
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Container, Nav } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
-
-function relate() {
+function Navbar() {
   return (
-    <Navbar >
+    <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Route path='/Home' element={<Home />} />
-          <Route path='/LifeStyle' element={<LifeStyle />} />
-          <Route path='/News/:id' element={<News />} />
+            <Link className="nav-link" to='/Home'>Home</Link>
+            <Link className="nav-link" to='/LifeStyle'>LifeStyle</Link>
+            <Link className="nav-link" to='/News'>News</Link>
+            <Link className="nav-link" to='/Contact'>Contact</Link>
+            <Link className="nav-link" to='/Cookies'>Cookies</Link>
+           
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -20,4 +23,4 @@ function relate() {
   )
 }
 
-export default relate
+export default Navbar
