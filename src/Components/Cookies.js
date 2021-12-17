@@ -1,8 +1,9 @@
 
 import * as React from 'react';
-
+import Button from '@mui/material/Button';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import { CardActions } from '@mui/material';
 
 function Cookies() {
     return (
@@ -44,6 +45,14 @@ if you have already replied to our survey pop-up (about how helpful the site con
         <br />
       </Typography>
     </CardContent>
+    <CardActions>
+ 
+    <Button variant="outlined" color="error" style={{ width: '40rem' , alignItems:'center'}} disable Cookies>
+      Disable cookies
+    </Button>
+
+
+    </CardActions>
   </React.Fragment>
 );
 
