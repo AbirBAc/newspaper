@@ -8,6 +8,7 @@ import Cookies from './Components/Cookies';
 import LifeStyle from './Components/LifeStyle';
 import Footer from './Components/Footer';
 import Header from './Components/Header/Head';
+import Register from './Components/Register';
 
 
 
@@ -27,7 +28,7 @@ function App() {
           <Route path='/Contact' element={<Contact />} />
           <Route path='/Cookies' element={<Cookies/>} />
         </Routes>
-        
+   
         <Footer/>
        
       </div>
